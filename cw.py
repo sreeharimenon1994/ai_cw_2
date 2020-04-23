@@ -52,7 +52,7 @@ model.apply(init_weights)
 loss_fn = torch.nn.CrossEntropyLoss()
 
 # setting the learnring rate
-learning_rate = 0.1
+learning_rate = 0.001
 optimizer = torch.optim.SGD(model.parameters(), lr=learning_rate)
 acc_train = []
 acc_test = []
